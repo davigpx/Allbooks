@@ -26,8 +26,8 @@ Com os seguintes dados:
 
 ```
 {
-    "nome": "vinicios de morais",
-    "email": "vinicios@.com.br",
+    "nome": "vinicios de sousa",
+    "email": "vinicios@.com",
     "senha": "123456",
     "endereco": "Rua Vergueiro, 3185",
     "complemento": "Vila Mariana",
@@ -50,7 +50,7 @@ Com os seguintes dados:
 
 ```
 {
-  "email": "vinicios@.com.br",
+  "email": "vinicios@.com",
   "senha":"123456"
 }
 ```
