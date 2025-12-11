@@ -70,4 +70,36 @@ E então, adicionar este mesmo token ao header das próximas requisições:
 
 ```
 Authorization: Bearer <ACCESS_TOKEN>
+
 ```
+
+/* Atenção: resolução do erro Git:
+   "fatal: Need to specify how to reconcile divergent branches."
+
+   Comandos rápidos:
+   - Rebase (aplica commits locais sobre o remoto):
+     git fetch origin
+     git pull --rebase origin <branch>
+
+   - Merge (comportamento clássico):
+     git pull --no-rebase origin <branch>
+
+   - Fast-forward apenas:
+     git pull --ff-only origin <branch>
+
+   Definir preferência (global ou por repositório):
+     git config --global pull.rebase true    # rebase por padrão
+     git config --global pull.rebase false   # merge por padrão
+     git config pull.rebase true             # por repositório
+
+   Em caso de conflitos:
+     git rebase --abort     # cancela rebase
+     git merge --abort      # cancela merge
+     Resolver conflitos, git add <arquivos>, git rebase --continue (ou git commit)
+
+   Recomendações:
+   - Rebase para histórico linear (feature branches).
+   - Merge para preservar histórico de merges.
+*/
+
+
